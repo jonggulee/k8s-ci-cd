@@ -1,6 +1,6 @@
 node {
     stage('Ready') {
-        sh "echo 'Ready'"
+        sh "echo 'Ready111'"
     }
 
     stage('Build') {
