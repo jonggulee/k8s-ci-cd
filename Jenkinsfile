@@ -8,6 +8,6 @@ node {
     }
 
     stage('Deploy') {
-        sh "echo 'Deply AWS'"
+        sh "echo 'Deply AWS123'"
     }
 }
