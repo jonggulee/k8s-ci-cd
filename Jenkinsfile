@@ -1,13 +1,14 @@
-node {
-    stage('Ready') {
-        sh "echo 'Ready11'"
-    }
-
-    stage('Build') {
-        sh "echo 'Build Jar'"
-    }
-
-    stage('Deploy') {
-        sh "echo 'Deply AWS'"
-    }
-}
+pipeline {
+     agent any
+     stages {
+         stage('Build') {
+             steps {
+                 sh 'echo "Hello World"'
+                 sh '''
+                     echo "Multiline shell steps works too"
+                     ls -lah
+                 '''
+             }
+         }
+     }
+ }
